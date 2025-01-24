@@ -27,8 +27,8 @@ if [ "$CHECK_DOC" = 1 ]; then
     # Check rpc consistency
     #test/lint/check-rpc-mappings.py .
     # Run all linters
-    #test/lint/lint-all.sh
-    #test/lint/extended-lint-all.sh
+    test/lint/lint-all.sh
+    test/lint/extended-lint-all.sh
 fi
 
 ccache --zero-stats --max-size=$CCACHE_SIZE
